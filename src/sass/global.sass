@@ -1,0 +1,187 @@
+body
+   font-family: 'Roboto', sans-serif
+   background: rgba(255, 255, 255, 1)
+   font-weight: 400
+   font-size: 16px
+   line-height: 100%
+   color: $black
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $red
+.container
+   padding: 0 15px
+   max-width: 1630px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px !important
+   @media (max-width: 991px)
+      max-width: 720px !important
+   @media (max-width: 767px)
+      max-width: 540px !important
+.d-flex, .q
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+.red 
+   color: $red
+footer
+   margin-top: auto
+.top
+   margin-bottom: 50px
+   align-items: center
+   justify-content: space-between
+   width: 100%
+   display: flex
+   border-bottom: 1px solid rgba(235, 235, 235, 1)
+   border-top: 1px solid rgba(235, 235, 235, 1)
+   .arr 
+      .svg 
+         path 
+            fill: rgba(51, 51, 51, 1)
+      &:hover 
+         .svg
+            path 
+               fill: $red
+               fill-opacity: 1
+h1
+   font-family: 'DIN Condensed'
+   color: rgba(255, 255, 255, 1)
+   font-size: 70px
+   font-weight: 400
+   line-height: 84px
+   text-align: left
+   text-transform: uppercase
+   margin: 0
+h2 
+   margin: 0
+   color: rgba(51, 51, 51, 1)
+   font-size: 70px
+   font-weight: 400
+   font-family: 'DIN Condensed'
+   line-height: 84px
+   text-align: left
+   text-transform: uppercase
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg, rect, line, circle
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $red
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $red 
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $red
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 7px
+   width: 7px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $red
+   border-radius: 6px
+.menu.active, .tabs__nav, .arcticmodal-container_i2, .arcticmodal-container_i, .arcticmodal-container
+   scrollbar-width: thin
+   scrollbar-color: transparent transparent
+.btn 
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.5s
+   width: 320px
+   height: 93px
+   background: rgba(217, 25, 25, 0.1)
+   color: rgba(217, 25, 25, 1)
+   font-size: 22px
+   font-weight: 500
+   line-height: 26px
+   &:hover 
+      background: rgba(217, 25, 25, 1)
+      color: white
+   &_2 
+      height: 91px
+      border-radius: 85px
+      background: rgba(217, 25, 25, 1)
+      width: 467px
+      justify-content: space-between
+      padding: 0 9px 0 30px
+      color: rgba(255, 255, 255, 1)
+      text-transform: uppercase
+      .svg 
+         transition: 0.5s
+      &:hover 
+         .svg 
+            transform: rotate(45deg)
+            circle
+               path 
+                  stroke: $red
+.tabs__btn 
+   width: 361px
+   height: 64px
+   box-sizing: border-box
+   border: 1px solid rgba(217, 25, 25, 1)
+   border-radius: 85px
+   background: transparent 
+   color: rgba(51, 51, 51, 0.7)
+   font-size: 22px
+   font-weight: 500
+   line-height: 26px
+   display: flex
+   align-items: center
+   justify-content: center
+   margin-right: 20px
+   &:hover 
+      background: $red 
+      color: white
+   &:last-child
+      margin-right: 0
+.tabs__btn_active
+   background: $red 
+   color: white
+
+

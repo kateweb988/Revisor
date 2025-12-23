@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+	<title>REVIZOR</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- Favicon -->
+	<!-- <link rel="icon" href="img/fav.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/fav.png" type="image/x-icon"> -->
+	<!-- OG -->
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="body-wrap page">
+		<header class="header" id="header">
+			<nav class="nav">
+				<div class="container">
+					<div class="nav__top q">
+						<div class="nav__left q">
+							<a href="index.html" class="nav__logo">
+								<img src="img/logo.svg" alt="">
+							</a>
+							<div class="nav__address">
+								<div class="nav__local q">
+									<img src="img/local.svg" alt="">
+									<span class="nav__address-current">
+									г. Москва ул. Кольцова, д. 25, кв. 23
+									</span>
+									<img src="img/down.svg" alt="" class="nav__down">
+								</div>
+
+								<ul class="nav__address-list">
+									<li>г. Москва, ул. Ленина, д. 10</li>
+									<li>г. Санкт-Петербург, Невский пр., д. 5</li>
+									<li>г. Казань, ул. Баумана, д. 3</li>
+								</ul>
+							</div>
+							<a href="mailto:revizor_priemka@mail.ru" class="nav__mail">
+								revizor_priemka@mail.ru
+							</a>
+							<p class="nav__status">
+								Круглосуточно
+							</p>
+						</div>
+						<a href="#" class="nav__link">
+							Заказать услугу
+						</a>
+						<div class="menu-btn"></div>
+					</div>
+					<div class="nav__bottom q">
+						<div class="nav__area q">
+							<a href="#" class="nav__soc" target="_blank">
+								<img src="img/soc1.svg" alt="" class="svg">
+							</a>
+							<a href="#" class="nav__soc" target="_blank">
+								<img src="img/soc2.svg" alt="" class="svg">
+							</a>
+							<a href="tel:+79931077515" class="nav__tel">
+								+7 993 107 75 15
+							</a>
+						</div>
+						<ul>
+							<li>
+								<a href="#">
+									Услуги
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Тарифы
+								</a>
+							</li>
+							<li  class="active">
+								<a href="#">
+									Команда
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Оборудование
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Объекты
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Отзывы
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Документы
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Видео
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Контакты
+								</a>
+							</li>
+						</ul>
+						<div class="nav__socials q">
+							<a href="#" target="_blank">
+								<img src="img/a1.svg" alt="" class="svg">
+							</a>
+							<a href="#" target="_blank">
+								<img src="img/a2.svg" alt="" class="svg">
+							</a>
+							<a href="#" target="_blank">
+								<img src="img/a3.svg" alt="" class="svg">
+							</a>
+							<a href="#" target="_blank">
+								<img src="img/a4.svg" alt="" class="svg">
+							</a>
+							<a href="#" target="_blank">
+								<img src="img/a5.svg" alt="" class="svg">
+							</a>
+						</div>
+					</div>
+
+					<div class="menu">
+						<div class="menu__wrap">
+							<div class="nav__address">
+								<div class="nav__local q">
+									<img src="img/local.svg" alt="">
+									<span class="nav__address-current">
+									г. Москва ул. Кольцова, д. 25, кв. 23
+									</span>
+									<img src="img/down.svg" alt="" class="nav__down">
+								</div>
+
+								<ul class="nav__address-list">
+									<li>г. Москва, ул. Ленина, д. 10</li>
+									<li>г. Санкт-Петербург, Невский пр., д. 5</li>
+									<li>г. Казань, ул. Баумана, д. 3</li>
+								</ul>
+							</div>
+							<ul>
+								<li>
+									<a href="#">
+										Услуги
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Тарифы
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Команда
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Оборудование
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Объекты
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Отзывы
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Документы
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Видео
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Контакты
+									</a>
+								</li>
+							</ul>
+							<div class="nav__area q">
+								<a href="#" class="nav__soc" target="_blank">
+									<img src="img/soc1.svg" alt="" class="svg">
+								</a>
+								<a href="#" class="nav__soc" target="_blank">
+									<img src="img/soc2.svg" alt="" class="svg">
+								</a>
+								<a href="tel:+79931077515" class="nav__tel">
+									+7 993 107 75 15
+								</a>
+							</div>
+							<a href="mailto:revizor_priemka@mail.ru" class="nav__mail">
+								revizor_priemka@mail.ru
+							</a>
+							<p class="nav__status">
+								Круглосуточно
+							</p>
+							<div class="nav__socials q">
+								<a href="#" target="_blank">
+									<img src="img/a1.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a2.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a3.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a4.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a5.svg" alt="" class="svg">
+								</a>
+							</div>
+							<a href="#" class="btn">
+								Заказать услугу
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="ser tar ser-item" id="ser">
+			<div class="container">
+				<div class="ser__per">
+					<div class="bread q">
+						<a href="#">
+							Главная
+						</a>
+						<p>
+							Тарифы
+						</p>
+					</div>
+					<div class="ser-item__area">
+						<div class="top q">
+							<h2>
+								тарифы
+							</h2>
+							<div class="arrows">
+								<div class="swiper-button-prev2 arr">
+									<img src="img/left.svg" alt="" class="svg">
+								</div>
+								<div class="swiper-button-next2 arr">
+									<img src="img/right.svg" alt="" class="svg">
+								</div>
+							</div>
+						</div>
+						<div class="swiper2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#">
+										<h3>
+											Базовый
+										</h3>
+										<p class="tar__sum">
+											4400 ₽-7400 ₽
+										</p>
+										<ul>
+											<li>
+												С выпиской ЕГРН:
+											</li>
+											<li>
+												Техническая приемка квартиры;
+											</li>
+											<li>
+												Составление акта осмотра в эл.виде.
+											</li>
+										</ul>
+										<div class="tar__info">
+											<div class="tar__text">
+												<p>
+													До 30 м2 - 4400₽
+												</p>
+												<p>
+													От 30
+													до 45 м2 - 5900₽
+												</p>
+												<p>
+													От 45 м² до 70 м2 - 7400₽
+												</p>
+												<p>
+													Свыше 70 м2 - 105₽/м2
+												</p>
+											</div>
+											<span class="btn btn_2">
+												заказать <img src="img/btn2.svg" alt="" class="svg">
+											</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<h3>
+											Базовый
+										</h3>
+										<p class="tar__sum">
+											4400 ₽-7400 ₽
+										</p>
+										<ul>
+											<li>
+												С выпиской ЕГРН:
+											</li>
+											<li>
+												Техническая приемка квартиры; 
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+											</li>
+											<li>
+												Составление акта осмотра в эл.виде.
+											</li>
+										</ul>
+										<div class="tar__info">
+											<div class="tar__text">
+												<p>
+													До 30 м2 - 4400₽
+												</p>
+												<p>
+													От 30
+													до 45 м2 - 5900₽
+												</p>
+												<p>
+													От 45 м² до 70 м2 - 7400₽
+												</p>
+												<p>
+													Свыше 70 м2 - 105₽/м2
+												</p>
+											</div>
+											<span class="btn btn_2">
+												заказать <img src="img/btn2.svg" alt="" class="svg">
+											</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<h3>
+											Комфорт
+										</h3>
+										<p class="tar__sum">
+											7400 ₽-11400 ₽
+										</p>
+										<ul>
+											<li>
+												С выпиской ЕГРН:
+											</li>
+											<li>
+												Техническая приемка квартиры;
+											</li>
+											<li>
+												Фотофиксация замечаний;
+											</li>
+											<li>
+												Определение марочной прочности
+											</li>
+											<li>
+												Стяжки склерометром <br>  (при черновой
+												отделке);
+											</li>
+											<li>
+												Проверка розеточных групп
+											</li>
+											<li>
+												лабораторным оборудованием.
+											</li>
+											<li>
+												Сверка площади квартиры
+											</li>
+											<li>
+												Тепловизионный осмотр
+											</li>
+										</ul>
+										<div class="tar__info">
+											<div class="tar__text">
+												<p>
+													До 30 м2 - 4400₽
+												</p>
+												<p>
+													От 30
+													до 45 м2 - 5900₽
+												</p>
+												<p>
+													От 45 м² до 70 м2 - 7400₽
+												</p>
+												<p>
+													Свыше 70 м2 - 105₽/м2
+												</p>
+											</div>
+											<span class="btn btn_2">
+												заказать <img src="img/btn2.svg" alt="" class="svg">
+											</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<h3>
+											Премиум <span>ХИТ</span>
+										</h3>
+										<p class="tar__sum">
+											23400 ₽-27400 ₽
+										</p>
+										<ul>
+											<li>
+												Тест АЭРОДВЕРЬЮ
+											</li>
+											<li>
+												Сверка площади с ЕГРН
+											</li>
+											<li>
+												Техническая приёмка с актом осмотра
+											</li>
+											<li>
+												Фотофиксация дефектов
+											</li>
+											<li>
+												Проверка прочности стяжки склерометром
+											</li>
+											<li>
+												Специалист из реестра НОСТРОЙ
+											</li>
+											<li>
+												Проверка розеток лабораторным оборудованием
+											</li>
+											<li>
+												Подготовка пакета документов для согласования
+											</li>
+											<li>
+												Тепловизионный осмотр
+											</li>
+										</ul>
+										<div class="tar__info">
+											<div class="tar__text">
+												<p>
+													До 30 м2 - 4400₽
+												</p>
+												<p>
+													От 30
+													до 45 м2 - 5900₽
+												</p>
+												<p>
+													От 45 м² до 70 м2 - 7400₽
+												</p>
+												<p>
+													Свыше 70 м2 - 105₽/м2
+												</p>
+											</div>
+											<span class="btn btn_2">
+												заказать <img src="img/btn2.svg" alt="" class="svg">
+											</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<h3>
+											Загородный
+										</h3>
+										<p class="tar__sum">
+											от 24850 ₽
+										</p>
+										<ul>
+											<li>
+												С выпиской ЕГРН:
+											</li>
+											<li>
+												Техническая приемка квартиры;
+											</li>
+											<li>
+												Составление акта осмотра в эл.виде.
+											</li>
+											<li>
+												Сверка площади квартиры
+											</li>
+										</ul>
+										<div class="tar__info">
+											<div class="tar__text">
+												<p>
+													До 110 м2 - 24850₽
+												</p>
+												<p>
+													От 110 <br>
+													до 150 м2 - 29850₽
+												</p>
+												<p>
+													От 150 м² до 200 м2 - 36850₽
+												</p>
+												<p>
+													Свыше 200 м2 - по соглашению
+												</p>
+											</div>
+											<span class="btn btn_2">
+												заказать <img src="img/btn2.svg" alt="" class="svg">
+											</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<h3>
+											Базовый
+										</h3>
+										<p class="tar__sum">
+											4400 ₽-7400 ₽
+										</p>
+										<ul>
+											<li>
+												С выпиской ЕГРН:
+											</li>
+											<li>
+												Техническая приемка квартиры;
+											</li>
+											<li>
+												Составление акта осмотра в эл.виде.
+											</li>
+										</ul>
+										<div class="tar__info">
+											<div class="tar__text">
+												<p>
+													До 30 м2 - 4400₽
+												</p>
+												<p>
+													От 30
+													до 45 м2 - 5900₽
+												</p>
+												<p>
+													От 45 м² до 70 м2 - 7400₽
+												</p>
+												<p>
+													Свыше 70 м2 - 105₽/м2
+												</p>
+											</div>
+											<span class="btn btn_2">
+												заказать <img src="img/btn2.svg" alt="" class="svg">
+											</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<h3>
+											Базовый
+										</h3>
+										<p class="tar__sum">
+											4400 ₽-7400 ₽
+										</p>
+										<ul>
+											<li>
+												С выпиской ЕГРН:
+											</li>
+											<li>
+												Техническая приемка квартиры;
+											</li>
+											<li>
+												Составление акта осмотра в эл.виде.
+											</li>
+										</ul>
+										<div class="tar__info">
+											<div class="tar__text">
+												<p>
+													До 30 м2 - 4400₽
+												</p>
+												<p>
+													От 30
+													до 45 м2 - 5900₽
+												</p>
+												<p>
+													От 45 м² до 70 м2 - 7400₽
+												</p>
+												<p>
+													Свыше 70 м2 - 105₽/м2
+												</p>
+											</div>
+											<span class="btn btn_2">
+												заказать <img src="img/btn2.svg" alt="" class="svg">
+											</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="pag pag10"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="objects objects-tar" id="objects">
+			<div class="container">
+				<div class="ser__per">
+					<div class="top">
+						<h2>
+							другие Объекты 
+						</h2>
+						<div class="arrows">
+							<div class="swiper-button-prev11 arr">
+								<img src="img/left.svg" alt="" class="svg">
+							</div>
+							<div class="swiper-button-next11 arr">
+								<img src="img/right.svg" alt="" class="svg">
+							</div>
+						</div>
+						<a href="#" class="btn">
+							Смотреть все объекты +
+						</a>
+					</div>
+					<div class="swiper11">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="objects__item">
+									<div class="objects__content">
+										<small>
+											Найдено
+										</small>
+										<h3>
+											<span class="red"> 113 замечаний</span> <br>
+											на сумму 300к
+										</h3>
+										<div>
+											<p>
+												ЖК: Нагорный
+											</p>
+											<p>
+												Застройщик: УГМК-Застройщик
+											</p>
+											<p>
+												Класс: Комфорт
+											</p>
+											<p>
+												Срок сдачи: 4 кв. 2024 - 4 кв. 2025
+											</p>
+											<p>
+												Район: Уралмаш
+											</p>
+										</div>
+									</div>
+									<img src="img/objects1.png" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="objects__item">
+									<div class="objects__content">
+										<small>
+											Найдено
+										</small>
+										<h3>
+											<span class="red"> 113 замечаний</span> <br>
+											на сумму 300к
+										</h3>
+										<div>
+											<p>
+												ЖК: Нагорный
+											</p>
+											<p>
+												Застройщик: УГМК-Застройщик
+											</p>
+											<p>
+												Класс: Комфорт
+											</p>
+											<p>
+												Срок сдачи: 4 кв. 2024 - 4 кв. 2025
+											</p>
+											<p>
+												Район: Уралмаш
+											</p>
+										</div>
+									</div>
+									<img src="img/objects2.png" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="objects__item">
+									<div class="objects__content">
+										<small>
+											Найдено
+										</small>
+										<h3>
+											<span class="red"> 113 замечаний</span> <br>
+											на сумму 300к
+										</h3>
+										<div>
+											<p>
+												ЖК: Нагорный
+											</p>
+											<p>
+												Застройщик: УГМК-Застройщик
+											</p>
+											<p>
+												Класс: Комфорт
+											</p>
+											<p>
+												Срок сдачи: 4 кв. 2024 - 4 кв. 2025
+											</p>
+											<p>
+												Район: Уралмаш
+											</p>
+										</div>
+									</div>
+									<img src="img/objects1.png" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="objects__item">
+									<div class="objects__content">
+										<small>
+											Найдено
+										</small>
+										<h3>
+											<span class="red"> 113 замечаний</span> <br>
+											на сумму 300к
+										</h3>
+										<div>
+											<p>
+												ЖК: Нагорный
+											</p>
+											<p>
+												Застройщик: УГМК-Застройщик
+											</p>
+											<p>
+												Класс: Комфорт
+											</p>
+											<p>
+												Срок сдачи: 4 кв. 2024 - 4 кв. 2025
+											</p>
+											<p>
+												Район: Уралмаш
+											</p>
+										</div>
+									</div>
+									<img src="img/objects2.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="pag pag11"></div>
+				</div>
+			</div>
+		</section>
+		<section class="rev" id="rev">
+			<div class="container">
+				<div class="ser__per">
+					<div class="top q">
+						<h2>
+							отзывы
+						</h2>
+						<div class="arrows">
+							<div class="swiper-button-prev7 arr">
+								<img src="img/left.svg" alt="" class="svg">
+							</div>
+							<div class="swiper-button-next7 arr">
+								<img src="img/right.svg" alt="" class="svg">
+							</div>
+						</div>
+						<a href="#" class="btn">
+							Смотреть все отзывы
+						</a>
+					</div>
+					<div class="rev__top q">
+						<div class="rev__el">
+							<div>
+								<img src="img/rev1.svg" alt="">
+							</div>
+							<p>
+								Более 100 отзывов
+							</p>
+						</div>
+						<div class="rev__el">
+							<div>
+								<img src="img/rev2.svg" alt="">
+							</div>
+							<p>
+								Более 500 отзывов
+							</p>
+						</div>
+						<div class="rev__el">
+							<div>
+								<img src="img/rev3.svg" alt="">
+							</div>
+							<p>
+								Более 80 отзывов
+							</p>
+						</div>
+						<div class="rev__el">
+							<div>
+								<img src="img/rev4.svg" alt="">
+							</div>
+							<p>
+								Более 50 отзывов
+							</p>
+						</div>
+						<div class="rev__el">
+							<div>
+								<img src="img/rev5.svg" alt="">
+							</div>
+							<p>
+								Более 90 отзывов
+							</p>
+						</div>
+					</div>
+					<div class="swiper7">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/rev1.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/rev2.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/rev3.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/rev4.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/rev1.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/rev3.png" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/rev4.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="pag pag3"></div>
+				</div>
+			</div>
+		</section>
+		<section class="faq" id="faq">
+			<div class="container">
+				<div class="ser__per">
+					<div class="top">
+						<h2>
+							частые вопросы
+						</h2>
+						<a href="#" class="btn">
+							Задать вопрос
+						</a>
+					</div>
+					<div class="accordeon">
+						<div class="accordeon-container">
+							<li class="accordeon__item">
+								<div class="accordeon__button closed"> <span class="red"> 1.</span> Сколько стоит ваша работа?</div>
+								<ul class="accordeon__panel">
+									<li class="panel__text">
+										<p>
+											Возврат денег от застройщика обычно занимает от 10 до 20 календарных дней, в зависимости от причины и условий договора. Если договор долевого участия уже был расторгнут, то застройщик обязан вернуть уплаченную сумму в течение 20 календарных дней со дня расторжения. Этот срок установлен Федеральным законом № 214 «Об участии в долевом строительстве». Если возврат происходит до регистрации договора, когда вы решили отказаться от покупки, деньги, как правило, возвращаются в течение 10 рабочих дней после получения заявления. Когда расторжение оформляется по соглашению сторон, срок возврата указывается в самом соглашении — чаще всего от 10 до 30 дней.
+										</p>
+										<p>
+											Если застройщик нарушает эти сроки и не возвращает деньги вовремя, можно направить письменную претензию, а при дальнейшем уклонении — обратиться в суд. В таком случае суд взыщет не только основную сумму, но и неустойку за каждый день просрочки, штраф до 50% от присуждённой суммы по закону о защите прав потребителей, а также компенсацию морального вреда и расходы на юриста.
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li class="accordeon__item">
+								<div class="accordeon__button closed"> <span class="red"> 2.</span> Сколько времени занимает возврат денег от застройщика?</div>
+								<ul class="accordeon__panel">
+									<li class="panel__text">
+										<p>
+											Возврат денег от застройщика обычно занимает от 10 до 20 календарных дней, в зависимости от причины и условий договора. Если договор долевого участия уже был расторгнут, то застройщик обязан вернуть уплаченную сумму в течение 20 календарных дней со дня расторжения. Этот срок установлен Федеральным законом № 214 «Об участии в долевом строительстве». Если возврат происходит до регистрации договора, когда вы решили отказаться от покупки, деньги, как правило, возвращаются в течение 10 рабочих дней после получения заявления. Когда расторжение оформляется по соглашению сторон, срок возврата указывается в самом соглашении — чаще всего от 10 до 30 дней.
+										</p>
+										<p>
+											Если застройщик нарушает эти сроки и не возвращает деньги вовремя, можно направить письменную претензию, а при дальнейшем уклонении — обратиться в суд. В таком случае суд взыщет не только основную сумму, но и неустойку за каждый день просрочки, штраф до 50% от присуждённой суммы по закону о защите прав потребителей, а также компенсацию морального вреда и расходы на юриста.
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li class="accordeon__item">
+								<div class="accordeon__button closed"> <span class="red"> 3.</span> Нужно ли мне лично присутствовать в суде?</div>
+								<ul class="accordeon__panel">
+									<li class="panel__text">
+										<p>
+											Возврат денег от застройщика обычно занимает от 10 до 20 календарных дней, в зависимости от причины и условий договора. Если договор долевого участия уже был расторгнут, то застройщик обязан вернуть уплаченную сумму в течение 20 календарных дней со дня расторжения. Этот срок установлен Федеральным законом № 214 «Об участии в долевом строительстве». Если возврат происходит до регистрации договора, когда вы решили отказаться от покупки, деньги, как правило, возвращаются в течение 10 рабочих дней после получения заявления. Когда расторжение оформляется по соглашению сторон, срок возврата указывается в самом соглашении — чаще всего от 10 до 30 дней.
+										</p>
+										<p>
+											Если застройщик нарушает эти сроки и не возвращает деньги вовремя, можно направить письменную претензию, а при дальнейшем уклонении — обратиться в суд. В таком случае суд взыщет не только основную сумму, но и неустойку за каждый день просрочки, штраф до 50% от присуждённой суммы по закону о защите прав потребителей, а также компенсацию морального вреда и расходы на юриста.
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li class="accordeon__item">
+								<div class="accordeon__button closed"> <span class="red"> 4.</span> С какими застройщиками вы работаете?</div>
+								<ul class="accordeon__panel">
+									<li class="panel__text">
+										<p>
+											Возврат денег от застройщика обычно занимает от 10 до 20 календарных дней, в зависимости от причины и условий договора. Если договор долевого участия уже был расторгнут, то застройщик обязан вернуть уплаченную сумму в течение 20 календарных дней со дня расторжения. Этот срок установлен Федеральным законом № 214 «Об участии в долевом строительстве». Если возврат происходит до регистрации договора, когда вы решили отказаться от покупки, деньги, как правило, возвращаются в течение 10 рабочих дней после получения заявления. Когда расторжение оформляется по соглашению сторон, срок возврата указывается в самом соглашении — чаще всего от 10 до 30 дней.
+										</p>
+										<p>
+											Если застройщик нарушает эти сроки и не возвращает деньги вовремя, можно направить письменную претензию, а при дальнейшем уклонении — обратиться в суд. В таком случае суд взыщет не только основную сумму, но и неустойку за каждый день просрочки, штраф до 50% от присуждённой суммы по закону о защите прав потребителей, а также компенсацию морального вреда и расходы на юриста.
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li class="accordeon__item">
+								<div class="accordeon__button closed"> <span class="red"> 5.</span> Какие компенсации можно получить?</div>
+								<ul class="accordeon__panel">
+									<li class="panel__text">
+										<p>
+											Возврат денег от застройщика обычно занимает от 10 до 20 календарных дней, в зависимости от причины и условий договора. Если договор долевого участия уже был расторгнут, то застройщик обязан вернуть уплаченную сумму в течение 20 календарных дней со дня расторжения. Этот срок установлен Федеральным законом № 214 «Об участии в долевом строительстве». Если возврат происходит до регистрации договора, когда вы решили отказаться от покупки, деньги, как правило, возвращаются в течение 10 рабочих дней после получения заявления. Когда расторжение оформляется по соглашению сторон, срок возврата указывается в самом соглашении — чаще всего от 10 до 30 дней.
+										</p>
+										<p>
+											Если застройщик нарушает эти сроки и не возвращает деньги вовремя, можно направить письменную претензию, а при дальнейшем уклонении — обратиться в суд. В таком случае суд взыщет не только основную сумму, но и неустойку за каждый день просрочки, штраф до 50% от присуждённой суммы по закону о защите прав потребителей, а также компенсацию морального вреда и расходы на юриста.
+										</p>
+									</li>
+								</ul>
+							</li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="order" id="order">
+			<div class="container">
+				<div class="top">
+					<h2>
+						оставить заявку
+					</h2>
+				</div>
+				<div class="order__wrap q">
+					<div class="order__left">
+						<form action="#" class="order__form">
+							<input type="text" placeholder="Имя">
+							<input type="tel" placeholder="Телефон" class="tel">
+							<textarea name="text" placeholder="Комментарий"></textarea>
+							<div class="call__flex input-holder checkbox q">
+								<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+									id="form2" value="Я даю свое согласие на обработку персональных данных">
+								<label class="form-check-label " for="form2">
+									<span>
+										Соглашаюсь
+										с <a href="#" target="_blank"> Политикой конфиденциальности</a>
+									</span>
+								</label>
+							</div>
+							<div class="call__flex input-holder checkbox q">
+								<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+									id="form3" value="Я даю свое согласие на обработку персональных данных">
+								<label class="form-check-label " for="form3">
+									<span>
+										Соглашаюсь на рассылку рекламных предложений 
+									</span>
+								</label>
+							</div>
+							<button class="btn btn_2">
+								отправить заявку <img src="img/btn.svg" alt="" class="svg">
+							</button>
+						</form>
+					</div>
+					<div class="order__right">
+						<div class="order__top q">
+							<img src="img/order1.svg" alt="">
+							<p>
+								Принимаем заявки со <span class="red"> всей России</span>
+							</p>
+						</div>
+						<img src="img/mapp.svg" alt="" class="order__map">
+						<div class="order__bottom q">
+							<div class="order__area">
+								<div class="nav__address">
+									<div class="nav__local q">
+										<img src="img/local.svg" alt="">
+										<span class="nav__address-current">
+										г. Москва ул. Кольцова, д. 25, кв. 23
+										</span>
+										<img src="img/down.svg" alt="" class="nav__down">
+									</div>
+
+									<ul class="nav__address-list">
+										<li>г. Москва, ул. Ленина, д. 10</li>
+										<li>г. Санкт-Петербург, Невский пр., д. 5</li>
+										<li>г. Казань, ул. Баумана, д. 3</li>
+									</ul>
+								</div>
+								<div class="order__flex q">
+									<a href="tel:+79931077515">
+										+7 993 107 75 15
+									</a>
+									<a href="mailto:revizor_priemka@mail.ru">
+										revizor_priemka@mail.ru
+									</a>
+								</div>
+								<div class="order__socials q">
+									<a href="#">
+										Telegram
+									</a>
+									<a href="#">
+										WhatsApp
+									</a>
+								</div>
+							</div>
+							<div class="nav__socials q">
+								<a href="#" target="_blank">
+									<img src="img/a1.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a2.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a3.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a4.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a5.svg" alt="" class="svg">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__per">
+					<div class="footer__top q">
+						<img src="img/footer-logo.svg" alt="" class="footer__logo">
+						<div class="nav__socials q">
+							<a href="#" target="_blank">
+								<img src="img/a2.svg" alt="" class="svg">
+							</a>
+							<a href="#" target="_blank">
+								<img src="img/a3.svg" alt="" class="svg">
+							</a>
+							<a href="#" target="_blank">
+								<img src="img/a4.svg" alt="" class="svg">
+							</a>
+							<a href="#" target="_blank">
+								<img src="img/a5.svg" alt="" class="svg">
+							</a>
+						</div>
+						<div class="footer__links q">
+							<a href="#" target="_blank">
+								Telegram
+							</a>
+							<a href="#" target="_blank">
+								WhatsApp
+							</a>
+						</div>
+					</div>
+					<div class="footer__info q">
+						<div class="footer__item">
+							<span>
+								Время работы офиса
+							</span>
+							<p>
+								Круглосуточно
+							</p>
+						</div>
+						<div class="footer__item">
+							<span>
+								Адрес
+							</span>
+							<p>
+								г. Москва, Новокузнецкая <br> улица, 1с1
+							</p>
+						</div>
+						<div class="footer__item">
+							<span>
+								Адрес
+							</span>
+							<p>
+								г. Екатеринбург, <br>
+								..............................
+							</p>
+						</div>
+						<div class="footer__item">
+							<span>
+								Адрес
+							</span>
+							<p>
+								г. Пермь, <br>
+								..............................
+							</p>
+						</div>
+						<div class="footer__item">
+							<span>
+								Адрес
+							</span>
+							<p>
+								г. Курган,  <br>
+								..............................
+							</p>
+						</div>
+					</div>
+					<div class="footer__row q">
+						<a href="mailto:revizor_priemka@mail.ru" class="footer__mail lnk">
+							revizor_priemka@mail.ru
+						</a>
+						<a href="tel:+79931077515" class="footer__tel lnk">
+							+7 993 107 75 15
+						</a>
+						<a href="https://gasfort.ru/" class="footer__com q">
+							<p>
+								Сделано в
+							</p>
+							<img src="img/com.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__flex q">
+						<ul class="footer__list">
+							<li>
+								<a href="#">
+									Услуги
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Тарифы
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Команда
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Оборудование
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Объекты
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Отзывы
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Документы
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Видео
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Контакты
+								</a>
+							</li>
+						</ul>
+						<div class="footer__area">
+							<p>
+								с 2021-2025 © Все права защищены
+							</p>
+							<a href="#" target="_blank">
+								Политика конфиденциальности
+							</a>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<ul class="footer__list">
+							<li>
+								<a href="#">
+									Приёмка <br>
+									квартир
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Приемка частных <br>
+									домов/коттеджей
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Приёмка <br>
+									ремонта/отделки
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Дополнительные <br>
+									обследования (тепловизор и т.д.);
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Юридическое сопровождение, <br>
+									досудебная и судебная экспертиза
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript">
+		ymaps.ready(init);
+
+		function init() {
+			var myMap = new ymaps.Map("map", {
+				// Центр карты, указываем коордианты
+				center: [55.81586, 37.58126],
+				// Масштаб, тут все просто
+				zoom: 14,
+				// Отключаем все элементы управления
+				controls: []
+			});
+
+			var myGeoObjects = [];
+
+			// Наша метка, указываем коордианты
+			myGeoObjects = new ymaps.Placemark([55.81586, 37.58126], {
+				balloonContentBody: 'Army',
+			}, {
+				iconLayout: 'default#image',
+				// Путь до нашей картинки
+				iconImageHref: 'img/map.svg',
+				// Размер по ширине и высоте
+				iconImageSize: [140, 140],
+				// Смещение левого верхнего угла иконки относительно
+				// её «ножки» (точки привязки).
+				iconImageOffset: [-35, -35]
+			});
+
+			var clusterer = new ymaps.Clusterer({
+				clusterDisableClickZoom: false,
+				clusterOpenBalloonOnClick: false,
+			});
+
+			clusterer.add(myGeoObjects);
+			myMap.geoObjects.add(clusterer);
+			// Отлючаем возможность изменения масштаба
+			myMap.behaviors.disable('scrollZoom');
+
+		}
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<script src="js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.js"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+</body>
+
+</html>

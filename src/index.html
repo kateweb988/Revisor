@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+	<title>REVIZOR</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- Favicon -->
+	<!-- <link rel="icon" href="img/fav.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/fav.png" type="image/x-icon"> -->
+	<!-- OG -->
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<h2 style="text-align: center; margin: 40px auto; color: black">
+		Pages
+	</h2>
+	<ul class="mm" style="display: flex; max-width: 800px; margin: 0 auto 50px; flex-wrap: wrap;">
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="main.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Главная</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="services.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Услуги</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="services-item.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Услуга</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="team.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Команда</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="team-item.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Участник</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="items.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Оборудование</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="items-item.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Товар</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="tarrifs.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Тарифы</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="objects.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Объекты</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="objects-item.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Объект</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="reviews.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Отзывы</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="articles.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Статьи</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="articles-item.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Статья</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="documents.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Документы</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="video.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Видео</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="contacts.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Контакты</a>
+		</li>
+	</ul>
+	<div class="q"
+		style="justify-content: center; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
+		<a href="#" class="btn btn_1 a1" style="margin: 20px;">
+			оставить заявку
+		</a>
+		<a href="#" class="btn btn_2 a2" style="margin: 20px;">
+			Оставить заявку2 <img src="img/btn.svg" alt="" class="svg">
+		</a>
+		<a href="#" class="btn tabs__btn a3" style="margin: 20px;">
+			калькулятор приемки 
+		</a>
+		<a href="#" class="btn tabs__btn a4" style="margin: 20px;">
+			Оборудование
+		</a>
+		<!-- <a href="#" class="btn btn_2 a2" style="margin: 20px;">
+			<p>
+				thank
+			</p>
+		</a> -->
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-call">
+			<div class="popup-call__box order">
+				<div class="popup__top q">
+					<h2 class="popup__title">
+						оставить <span class="red">заявку</span> 
+					</h2>
+					<div class="box-modal__close articmodal-close">
+						<img src="img/close3.svg" alt="">
+					</div>
+				</div>
+				<div class="order__wrap q">
+					<div class="order__left">
+						<form action="#" class="order__form">
+							<input type="text" placeholder="Имя">
+							<input type="tel" placeholder="Телефон" class="tel">
+							<textarea name="text" placeholder="Комментарий"></textarea>
+							<div class="call__flex input-holder checkbox q">
+								<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+									id="forms2" value="Я даю свое согласие на обработку персональных данных">
+								<label class="form-check-label " for="forms2">
+									<span>
+										Соглашаюсь
+										с <a href="#" target="_blank"> Политикой конфиденциальности</a>
+									</span>
+								</label>
+							</div>
+							<div class="call__flex input-holder checkbox q">
+								<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+									id="forms3" value="Я даю свое согласие на обработку персональных данных">
+								<label class="form-check-label " for="forms3">
+									<span>
+										Соглашаюсь на рассылку рекламных предложений 
+									</span>
+								</label>
+							</div>
+							<button class="btn btn_2">
+								отправить заявку <img src="img/btn.svg" alt="" class="svg">
+							</button>
+						</form>
+					</div>
+					<div class="order__right">
+						<div class="order__top q">
+							<img src="img/order1.svg" alt="">
+							<p>
+								Принимаем заявки со <span class="red"> всей России</span>
+							</p>
+						</div>
+						<img src="img/mapp.svg" alt="" class="order__map">
+						<div class="order__bottom q">
+							<div class="order__area">
+								<div class="nav__address">
+									<div class="nav__local q">
+										<img src="img/local.svg" alt="">
+										<span class="nav__address-current">
+										г. Москва ул. Кольцова, д. 25, кв. 23
+										</span>
+										<img src="img/down.svg" alt="" class="nav__down">
+									</div>
+
+									<ul class="nav__address-list">
+										<li>г. Москва, ул. Ленина, д. 10</li>
+										<li>г. Санкт-Петербург, Невский пр., д. 5</li>
+										<li>г. Казань, ул. Баумана, д. 3</li>
+									</ul>
+								</div>
+								<div class="order__flex q">
+									<a href="tel:+79931077515">
+										+7 993 107 75 15
+									</a>
+									<a href="mailto:revizor_priemka@mail.ru">
+										revizor_priemka@mail.ru
+									</a>
+								</div>
+								<div class="order__socials q">
+									<a href="#">
+										Telegram
+									</a>
+									<a href="#">
+										WhatsApp
+									</a>
+								</div>
+							</div>
+							<div class="nav__socials q">
+								<a href="#" target="_blank">
+									<img src="img/a1.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a2.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a3.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a4.svg" alt="" class="svg">
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/a5.svg" alt="" class="svg">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-call2">
+			<div class="popup-call__box order">
+				<div class="popup__top q">
+					<h2 class="popup__title">
+						оставить <span class="red">заявку</span> 
+					</h2>
+					<div class="box-modal__close articmodal-close">
+						<img src="img/close3.svg" alt="">
+					</div>
+				</div>
+				<div class="order__wrap q">
+					<div class="order__left">
+						<form action="#" class="order__form">
+							<input type="text" placeholder="Имя">
+							<input type="tel" placeholder="Телефон" class="tel">
+							<div class="nav__address">
+								<div class="nav__local q">
+									<span class="nav__address-current">
+										Технический надзор частного дома
+									</span>
+									<img src="img/down2.svg" alt="" class="nav__down">
+								</div>
+
+								<ul class="nav__address-list">
+									<li>
+										Технический надзор частного дома
+									</li>
+									<li>Приёмка 
+										квартир</li>
+									<li>Приёмка 
+										ремонта/отделки</li>
+									<li>Юридическое сопровождение, 
+										досудебная и судебная экспертиза</li>
+								</ul>
+							</div>
+							<div class="call__flex input-holder checkbox q">
+								<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+									id="formq2" value="Я даю свое согласие на обработку персональных данных">
+								<label class="form-check-label " for="formq2">
+									<span>
+										Соглашаюсь
+										с <a href="#" target="_blank"> Политикой конфиденциальности</a>
+									</span>
+								</label>
+							</div>
+							<div class="call__flex input-holder checkbox q">
+								<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+									id="formq3" value="Я даю свое согласие на обработку персональных данных">
+								<label class="form-check-label " for="formq3">
+									<span>
+										Соглашаюсь на рассылку рекламных предложений 
+									</span>
+								</label>
+							</div>
+							<button class="btn btn_2">
+								Оставить заявку <img src="img/btn.svg" alt="" class="svg">
+							</button>
+						</form>
+					</div>
+					<div class="order__right">
+						<h3>
+							Технический надзор частного дома:
+						</h3>
+						<ol>
+							<li>
+								Поэтапная приемка работ: Работы по кладке на начинаются без устранения замечаний на фундаменте и тд. 
+							</li>
+							<li>
+								Контроль качества выполняемых работ: контроль за соблюдением проектных решений.
+							</li>
+							<li>
+								Контроль качества выполняемых работ: соответствие требованиям нормативной документации (СП, ГОСТ и тд).
+							</li>
+							<li>
+								Контроль качества применяемых материалов.
+							</li>
+							<li>
+								Инструментальный контроль качества выполненных работ.
+							</li>
+							<li>
+								Составление отчетности по итогам выезда, включая фотофиксацию и отчет в электронной форме.
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-call3">
+			<div class="popup-call__box pop calc">
+				<div class="popup__top q">
+					<h2 class="popup__title">
+						калькулятор <span class="red"> приемки </span>
+					</h2>
+					<div class="box-modal__close articmodal-close">
+						<img src="img/close3.svg" alt="">
+					</div>
+				</div>
+				<div class="calc__wrap">
+					<h3 class="calc__title">
+						Укажите площадь Вашей квартиры с балконом / лоджией / террасой, м2
+					</h3>
+					<div class="tabs">
+						<div class="tabs__nav d-flex">
+							<a href="#" class="tabs__btn tabs__btn_active active">
+								Приемка квартиры
+							</a>
+							<a href="#" class="tabs__btn">
+								Приемка дома
+							</a>
+							<a href="#" class="tabs__btn">
+								Технадзор
+							</a>
+						</div>
+						<div class="tabs__content">
+							<div class="tabs__pane tabs__pane_show">
+								<form action="#" class="calc__form">
+									<div class="calc__flex q">
+										<div class="calc__item">
+											<input type="text" placeholder="Екатеринбург">
+											<label>Город</label>
+										</div>
+										<div class="calc__item">
+											<input type="text" placeholder="Орловский">
+											<label>Название ЖК</label>
+										</div>
+										<div class="calc__item">
+											<input type="number" placeholder="30">
+											<label>Площадь квартиры (м²)</label>
+										</div>
+										<div class="calc__item">
+											<input type="number" placeholder="4">
+											<label>Количество комнат</label>
+										</div>
+									</div>
+									<h3>
+										Параметры приемки
+									</h3>
+									<div class="calc__row q">
+										<div class="radio-list">
+											<!-- 11 блоков -->
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Фотофиксация <br>
+																	замечаний</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Определение прочности стяжки</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Проверка электричества</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="sub">
+													проверка ЛАБОРАТОРНЫМ ОБОРУДОВАНИЕМ
+												</span>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Тепловизионный осмотр</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Тест <br>
+																	Аэродверью</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="sub">
+													Площадь <br>
+													до 2 м2
+												</span>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Пакет <br>
+																	документов</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Специалист <br>
+																	НОСТРОЙ, НОПРИЗ</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+										</div>
+									</div>
+									<h3>
+										дополнительные услуги
+									</h3>
+									<div class="calc__row calc__row_2 q">
+										<div class="radio-list">
+											<!-- 11 блоков -->
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Приемка <br>
+																	кладовой</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="sum">
+													+ 1500 ₽
+												</span>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Приемка  <br>
+																	паркинга</span>
+												<span class="sum">
+													+ 1500 ₽
+												</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Оценка <br>
+																	для банка</span>
+												<span class="sum">
+													+ 4000 ₽
+												</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Приемка по <br> доверенности </span>
+												<span class="sum">
+													+ 5000 ₽
+												</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="calc__bottom q">
+										<div class="calc__sum">
+											<p>
+												 200 000 ₽
+											</p>
+											<span>
+												Общая стоимость
+											</span>
+										</div>
+										<div class="call__flex input-holder checkbox q">
+											<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+												id="form1" value="Я даю свое согласие на обработку персональных данных">
+											<label class="form-check-label " for="form1">
+												<span>
+													Отправляя данную форму, я соглашаюсь <br>
+													с <a href="#" target="_blank"> Политикой конфиденциальности</a>
+												</span>
+											</label>
+										</div>
+										<button class="btn btn_2">
+											отправить заявку <img src="img/btn.svg" alt="" class="svg">
+										</button>
+									</div>
+								</form>
+							</div>
+							<div class="tabs__pane">
+								<form action="#" class="calc__form">
+									<div class="calc__flex q">
+										<div class="calc__item">
+											<input type="text" placeholder="Екатеринбург">
+											<label>Город</label>
+										</div>
+										<div class="calc__item">
+											<input type="text" placeholder="Орловский">
+											<label>Название ЖК</label>
+										</div>
+										<div class="calc__item">
+											<input type="number" placeholder="30">
+											<label>Площадь квартиры (м²)</label>
+										</div>
+										<div class="calc__item">
+											<input type="number" placeholder="4">
+											<label>Количество комнат</label>
+										</div>
+									</div>
+									<h3>
+										Параметры приемки
+									</h3>
+									<div class="calc__row q">
+										<div class="radio-list">
+											<!-- 11 блоков -->
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Фотофиксация <br>
+																	замечаний</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Определение прочности стяжки</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Проверка электричества</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="sub">
+													проверка ЛАБОРАТОРНЫМ ОБОРУДОВАНИЕМ
+												</span>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Тепловизионный осмотр</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Тест <br>
+																	Аэродверью</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="sub">
+													Площадь <br>
+													до 2 м2
+												</span>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Пакет <br>
+																	документов</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Специалист <br>
+																	НОСТРОЙ, НОПРИЗ</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+										</div>
+									</div>
+									<h3>
+										дополнительные услуги
+									</h3>
+									<div class="calc__row calc__row_2 q">
+										<div class="radio-list">
+											<!-- 11 блоков -->
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Оценка <br>
+																	для банка</span>
+												<span class="sum">
+													+ 4000 ₽
+												</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Приемка по <br> доверенности </span>
+												<span class="sum">
+													+ 5000 ₽
+												</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="calc__bottom q">
+										<div class="calc__sum">
+											<p>
+												 200 000 ₽
+											</p>
+											<span>
+												Общая стоимость
+											</span>
+										</div>
+										<div class="call__flex input-holder checkbox q">
+											<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+												id="form1" value="Я даю свое согласие на обработку персональных данных">
+											<label class="form-check-label " for="form1">
+												<span>
+													Отправляя данную форму, я соглашаюсь <br>
+													с <a href="#" target="_blank"> Политикой конфиденциальности</a>
+												</span>
+											</label>
+										</div>
+										<button class="btn btn_2">
+											отправить заявку <img src="img/btn.svg" alt="" class="svg">
+										</button>
+									</div>
+								</form>
+							</div>
+							<div class="tabs__pane">
+								<form action="#" class="calc__form">
+									<div class="calc__flex q">
+										<div class="calc__item">
+											<input type="text" placeholder="Екатеринбург">
+											<label>Город</label>
+										</div>
+										<div class="calc__item">
+											<input type="text" placeholder="Орловский">
+											<label>Название ЖК</label>
+										</div>
+										<div class="calc__item">
+											<input type="number" placeholder="30">
+											<label>Площадь квартиры (м²)</label>
+										</div>
+										<div class="calc__item">
+											<input type="number" placeholder="4">
+											<label>Количество комнат</label>
+										</div>
+									</div>
+									<h3>
+										Параметры приемки
+									</h3>
+									<div class="calc__row q">
+										<div class="radio-list">
+											<!-- 11 блоков -->
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Фотофиксация <br>
+																	замечаний</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Определение прочности стяжки</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Проверка электричества</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="sub">
+													проверка ЛАБОРАТОРНЫМ ОБОРУДОВАНИЕМ
+												</span>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Тепловизионный осмотр</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Тест <br>
+																	Аэродверью</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="sub">
+													Площадь <br>
+													до 2 м2
+												</span>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Пакет <br>
+																	документов</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Специалист <br>
+																	НОСТРОЙ, НОПРИЗ</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+
+										</div>
+									</div>
+									<h3>
+										дополнительные услуги
+									</h3>
+									<div class="calc__row calc__row_2 q">
+										<div class="radio-list">
+											<!-- 11 блоков -->
+
+											<label class="radio-card">
+												<input type="checkbox" name="option">
+												<span class="title">Оценка <br>
+																	для банка</span>
+												<span class="sum">
+													+ 4000 ₽
+												</span>
+												<div class="tooltip">
+													<img src="img/sub.svg" alt="info" class="svg tooltip__icon">
+													<div class="tooltip__content">
+														Визуальная доказательная
+														база о наличии дефекта и
+														о его состоянии на момент
+														приемки
+													</div>
+												</div>
+												<span class="switch">
+												<span class="knob"></span>
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="calc__bottom q">
+										<div class="calc__sum">
+											<p>
+												 200 000 ₽
+											</p>
+											<span>
+												Общая стоимость
+											</span>
+										</div>
+										<div class="call__flex input-holder checkbox q">
+											<input class="form-check-input custom-checkbox form-control" type="checkbox" name="check"
+												id="form1" value="Я даю свое согласие на обработку персональных данных">
+											<label class="form-check-label " for="form1">
+												<span>
+													Отправляя данную форму, я соглашаюсь <br>
+													с <a href="#" target="_blank"> Политикой конфиденциальности</a>
+												</span>
+											</label>
+										</div>
+										<button class="btn btn_2">
+											отправить заявку <img src="img/btn.svg" alt="" class="svg">
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-call4">
+			<div class="popup-call__box pop ser-el">
+				<div class="popup__top q">
+					<h2 class="popup__title">
+						Склерометр ОНИКС-2.5
+					</h2>
+					<div class="box-modal__close articmodal-close">
+						<img src="img/close3.svg" alt="">
+					</div>
+				</div>
+				<div class="ser-item__area">
+					<div class="team__item_row q">
+						<div class="team__item_photo">
+							<img src="img/big.png" alt="">
+						</div>
+						<div class="team__item_content order__right">
+							<h3>
+								заголовок 1
+							</h3>
+							<p>
+								Обследуем дома и коттеджи комплексно: проверяем несущие конструкции, кровлю, фундаменты, системы отопления, водоснабжения и электроснабжения. 
+							</p>
+							<p>
+								Наши отчёты включают подробные рекомендации по устранению выявленных проблем, что помогает планировать ремонт и эксплуатацию недвижимости с максимальной безопасностью.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div style="display:none;">
+		<div class="box-modal" id="popup-thank">
+			<div class="popup-call__box">
+				<div class="box-modal__close articmodal-close">
+					<img src="img/close3.svg" alt="">
+				</div>
+				<p class="popup__title">
+					Спасибо за заявку!
+				</p>
+				<p class="popup__text">
+					Наши менеджеры свяжутся <br>
+					с вами в ближайшее время
+				</p>
+			</div>
+		</div>
+	</div> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<script src="js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.js"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+</body>
+
+</html>
