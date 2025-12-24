@@ -2285,6 +2285,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   bottom: 20px;
   right: 20px;
   width: 46.2%;
+  opacity: 0;
   transition: 0.5s;
 }
 .objects__item:hover .btn_2 {
@@ -2518,6 +2519,10 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 
 .art {
   padding: 75px 0;
+}
+.art .arrows {
+  position: relative;
+  left: 79px;
 }
 .art .swiper6 {
   overflow: hidden;
@@ -4156,6 +4161,9 @@ body.lock {
   .popup-call__box {
     margin-top: -23rem;
   }
+  .art .arrows {
+    left: 88px;
+  }
 }
 @media screen and (max-width: 1350px) {
   .objects__item .btn_2 {
@@ -4233,6 +4241,9 @@ body.lock {
   }
   .rev__el div img {
     max-width: 200px;
+  }
+  .art .arrows {
+    left: 0;
   }
   .art__info {
     padding-right: 0;
