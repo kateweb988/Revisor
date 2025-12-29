@@ -3730,6 +3730,79 @@ body.lock {
   left: 22px;
 }
 
+.policy__wrap div {
+  margin-bottom: 25px;
+}
+.policy__wrap div span {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.7);
+}
+.policy__wrap div p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.note {
+  position: fixed;
+  bottom: 40px;
+  width: 100%;
+  padding: 50px;
+  max-width: 1600px;
+  left: 50%;
+  margin-left: -800px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+  background: rgba(42, 45, 50, 0.85);
+  border-radius: 20px;
+}
+.note__name {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: "DIN Condensed";
+  font-size: 25px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.note__text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.5);
+}
+.note__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 228.12px;
+  height: 101px;
+  background: #D91919;
+  border-radius: 20px;
+  flex: 1 0 auto;
+  max-width: 228.12px;
+  margin-left: 60px;
+  position: relative;
+  cursor: pointer;
+  top: 20px;
+  transition: 0.5s;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.note__close:hover {
+  color: white;
+  background: #333333;
+}
+
 @media screen and (max-width: 1600px) {
   .popup-call__box {
     width: 95% !important;
@@ -4163,6 +4236,11 @@ body.lock {
   }
   .art .arrows {
     left: 88px;
+  }
+  .note {
+    width: 90%;
+    left: 5%;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -4871,6 +4949,23 @@ body.lock {
   }
 }
 @media (max-width: 991px) {
+  .note__name {
+    text-align: center;
+  }
+  .note__close {
+    margin: 20px auto 0px;
+    height: 60px;
+    width: 100%;
+    font-size: 14px;
+    max-width: 100%;
+    top: 0;
+  }
+  .note {
+    padding: 20px;
+    bottom: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
   input, textarea, select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -5952,6 +6047,17 @@ body.lock {
   }
   .video-page__item {
     margin-bottom: 20px;
+  }
+  .policy__wrap div span, .policy__wrap div p {
+    font-size: 16px;
+  }
+  .note__name {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .note__text {
+    font-size: 12px;
+    line-height: 120%;
   }
 }
 @media screen and (max-width: 390px) {
