@@ -718,42 +718,72 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
-    // ====================== SWIPER 10 ======================
-  const swiper12 = new Swiper('.swiper12', {
-    slidesPerView: 3,
-    spaceBetween: 20,
-     pagination: {
-      el: '.pag12',
-      clickable: true,
-    },
+    // ====================== SWIPER 12 ======================
+  // const swiper12 = new Swiper('.swiper12', {
+  //   slidesPerView: 3,
+  //   spaceBetween: 20,
+  //    pagination: {
+  //     el: '.pag12',
+  //     clickable: true,
+  //   },
 
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        allowTouchMove: true,
-        simulateTouch: true,
-      },
-      767: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        allowTouchMove: true,
-        simulateTouch: true,
-      },
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        allowTouchMove: true,
-        simulateTouch: true,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        allowTouchMove: false,   // ❌ тач
-        simulateTouch: false,    // ❌ мышь
-      }
-    }
-  });
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 0,
+  //       allowTouchMove: true,
+  //       simulateTouch: true,
+  //     },
+  //     767: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 10,
+  //       allowTouchMove: true,
+  //       simulateTouch: true,
+  //     },
+  //     992: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 20,
+  //       allowTouchMove: true,
+  //       simulateTouch: true,
+  //     },
+  //     1200: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 20,
+  //       allowTouchMove: false,   // ❌ тач
+  //       simulateTouch: false,    // ❌ мышь
+  //     }
+  //   }
+  // });
+  let swiper12 = new Swiper('.swiper12', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  pagination: {
+    el: '.pag12',
+    clickable: true,
+  },
+  breakpoints: {
+    320: { slidesPerView: 1, spaceBetween: 0, allowTouchMove: true, simulateTouch: true },
+    767: { slidesPerView: 1, spaceBetween: 10, allowTouchMove: true, simulateTouch: true },
+    992: { slidesPerView: 2, spaceBetween: 20, allowTouchMove: true, simulateTouch: true },
+    1200: { slidesPerView: 3, spaceBetween: 20 }
+  }
+});
+
+function updateSwiper12() {
+  if (window.innerWidth >= 1200) {
+    // Десктоп: отключаем свайпы
+    swiper12.allowSlideNext = false;
+    swiper12.allowSlidePrev = false;
+  } else {
+    // Адаптив: включаем свайпы
+    swiper12.allowSlideNext = true;
+    swiper12.allowSlidePrev = true;
+  }
+}
+
+// Запуск и ресайз
+updateSwiper12();
+window.addEventListener('resize', updateSwiper12);
 });
 document.addEventListener('click', (e) => {
   const toggle = e.target.closest('.nav__local');

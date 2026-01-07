@@ -227,7 +227,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
          margin-bottom: 0
 .nav 
    &__bottom
-      align-items: center
+      align-items: flex-start
       height: 44px
       ul 
          height: 100%
@@ -319,7 +319,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
          border-bottom: 1px solid black
    &__top 
       align-items: center
-      margin: 20px 0
+      margin: 20px 0 30px
    &__left   
       align-items: center
    &__tel 
@@ -2121,7 +2121,8 @@ body.lock
    .swiper12 
       overflow: hidden
       .swiper-wrapper 
-         flex-wrap: wrap
+         // flex-wrap: wrap
+         // transform: initial !important
          .swiper-slide 
             margin-bottom: 20px
             height: 412px
@@ -2129,10 +2130,18 @@ body.lock
             overflow: hidden
             position: relative
             width: 31.5% !important
+            a 
+               display: block
+               width: 100%
+               height: 100%
+               &:focus 
+                  outline: none !important
             img 
                width: 100%
                height: 100%
                object-fit: cover
+            &:focus 
+               outline: none !important
    &__el 
       margin-bottom: 40px
       h4 
@@ -2676,7 +2685,7 @@ body.lock
    position: fixed
    bottom: 40px
    width: 100%
-   padding: 50px
+   padding: 20px
    max-width: 1600px
    left: 50%
    margin-left: -800px
@@ -2691,21 +2700,21 @@ body.lock
       margin-bottom: 10px
       font-weight: 400
       font-family: 'DIN Condensed'
-      font-size: 25px
+      font-size: 21px
       line-height: 150%
       text-transform: uppercase
       color: #FFFFFF
    &__text 
       font-weight: 400
-      font-size: 17px
+      font-size: 14px
       line-height: 160%
       color: rgba(255, 255, 255, 0.5)
    &__close 
       display: flex
       align-items: center
       justify-content: center
-      width: 228.12px
-      height: 101px
+      width: 200px
+      height: 90px
       background: $red
       border-radius: 20px
       flex: 1 0 auto 
@@ -2713,12 +2722,13 @@ body.lock
       margin-left: 60px
       position: relative
       cursor: pointer
-      top: 20px
+      top: 5px
       transition: 0.5s
       font-weight: 700
-      font-size: 20px
+      font-size: 18px
       line-height: 23px
       color: #FFFFFF
       &:hover 
          color: white 
          background: $black
+
