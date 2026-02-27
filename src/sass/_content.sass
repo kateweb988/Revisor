@@ -627,7 +627,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
 .tar 
    padding: 75px 0 
    .swiper2 
-      height: 843px
+      height: 905px
       .swiper-slide 
          height: 100%
          display: flex
@@ -643,6 +643,35 @@ input:-moz-placeholder, textarea:-moz-placeholder
                opacity: 1
                & + .swiper-slide 
                   opacity: 1
+         &.hit 
+            a 
+               background: $red
+               .tooltip__icon  
+                  path 
+                     fill: white
+                  circle 
+                     stroke: white
+               h3
+                  color: white
+                  span 
+                     border-color: white 
+                     color: white
+               .tar__sum
+                  color: rgba(255, 255, 255, 0.5)
+               ul 
+                  li 
+                     color: white
+                     &:before 
+                        background: white
+               .tar__text
+                  p 
+                     color: white
+               .btn 
+                  color: $red
+                  .svg 
+                     transform: rotate(45deg)
+                     #pp
+                        fill: $red !important
          &.swiper-slide-active
             opacity: 1
          a 
@@ -665,6 +694,8 @@ input:-moz-placeholder, textarea:-moz-placeholder
                line-height: 54px
                text-transform: uppercase
                transition: 0.5s
+               width: 100%
+               justify-content: space-between
                span 
                   display: flex
                   align-items: center
@@ -680,6 +711,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
                   font-weight: 500
                   line-height: 20px
                   transition: 0.5s
+                  font-family: "Roboto", sans-serif
             ul 
                padding-left: 0px
                li 
@@ -704,7 +736,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
                      height: 4px 
                      background: rgba(51, 51, 51, 1)
                      border-radius: 50%
-            &:hover 
+            &:hover
                background: $red
                .tooltip__icon  
                   path 
@@ -2409,8 +2441,12 @@ body.lock
    .ser-item__images
       margin-bottom: 0px
 .list 
+   display: flex
+   flex-wrap: wrap
+   gap: 10px
    li 
       display: flex
+      width: 20%
       margin-bottom: 15px
       align-items: flex-start
       p 
@@ -2429,7 +2465,7 @@ body.lock
          content: ""
          display: inline-flex
          position: relative
-         top: -1px
+         top: -2.2px
          background: url(/img/cl.svg) no-repeat center center
 .list2 
    padding-left: 20px
@@ -2731,4 +2767,23 @@ body.lock
       &:hover 
          color: white 
          background: $black
-
+.slide_1, .slide_2, .slide_3, .slide_4, .slide_6
+   li:before 
+      display: none !important
+.tar .swiper2 .swiper-slide a ul li
+   font-size: 17px
+.rev__el:first-child
+   display: none
+.set__row_2 .set__block h3
+   display: flex
+   div 
+      display: flex
+      margin-right: 5px
+.order__ser 
+   margin-top: 50px
+.contacts .order__map 
+   margin-bottom: -189px
+   margin-top: -223px
+   margin-left: auto
+   margin-right: 0
+   display: block

@@ -297,8 +297,8 @@
    .doc .ser-items__btn
       margin-top: 50px
    .contacts .order__map 
-      margin-bottom: -167px
-      margin-top: -67px
+      margin-bottom: -151px
+      margin-top: -181px
       margin-left: auto
       margin-right: 0
       display: block
@@ -420,6 +420,8 @@
       font-size: 14px
    .ser-item__images .swiper-slide
       width: 360px !important
+   .tar .swiper2
+      height: 938px
 @media screen and (max-width: 1199px)
    .pag 
       display: flex !important
@@ -439,15 +441,15 @@
       position: fixed
       top: 0
       right: 0
-      width: 100%
+      width: 82%
       height: 100%
-      padding: 110px 40px 40px
+      padding: 110px 30px 40px
       background: white
       transform: translateX(500%)
       transition: transform 0.5s
       z-index: 7
       overflow: hidden
-      text-align: right
+      text-align: left
       .nav__local
          width: 100%
          padding-bottom: 20px
@@ -487,8 +489,8 @@
          border-top: 1px solid rgba(235, 235, 235, 1)
          padding-top: 20px
          margin-top: 20px
-         padding-bottom: 20px
-         border-bottom: 1px solid rgba(235, 235, 235, 1)
+         padding-bottom: 0px
+         border-bottom: none
       .btn 
          margin-left: auto
          margin-top: 30px
@@ -844,6 +846,21 @@
    //    transform: translate3d(0, 0, 0) !important
    .ser-item .swiper12 .swiper-wrapper .swiper-slide
       width: 430px !important
+   .menu .nav__socials
+      justify-content: flex-start
+   .menu .nav__local
+      justify-content: flex-start
+   .menu
+      .nav__address-current
+         max-width: 164px 
+         width: 100%
+   .menu .nav__area
+      justify-content: flex-start
+   .menu .btn
+      margin-left: 0
+      width: 100%
+   .list li
+      width: 100%
 @media ( max-width: 991px )
    .note__name
       text-align: center
@@ -1420,6 +1437,10 @@
    .popup-call__box 
       .team__item_content
          margin-top: 10px
+   .order__ser
+      width: 100%
+      margin-top: 25px
+      margin-bottom: 20px
 @media screen and (max-width: 576px)
    button:active, button:focus 
       outline: none
@@ -1453,7 +1474,7 @@
       font-size: 14px
       line-height: 17px
    .ser__row div
-      width: 48.5%
+      width: 48.4%
    .tar .swiper2 .swiper-slide a ul li
       margin-bottom: 0
    .top
@@ -1673,6 +1694,102 @@
    .note__text
       font-size: 12px
       line-height: 120%
+   .ser__text, .ser__item ol
+      display: none
+   .nav 
+      .mob 
+            font-weight: 500
+            font-size: 13px
+            line-height: 15px
+            color: #333333
+            margin-left: auto
+            margin-right: 50px
+   .nav__left
+      padding-top: 9px
+      width: 100%
+      justify-content: space-between
+      padding-right: 20px
+   .nav__logo
+      margin-right: 0
+   .nav__top
+      margin: 18px 0 26px
+   .nav__local, .nav__mail, .nav__status
+      font-size: 14px
+   .menu .nav__status
+      width: 100%
+      margin-left: 0
+      padding-bottom: 20px
+      border-bottom: 1px solid rgb(235, 235, 235)
+   .menu
+      .btn
+         margin-top: 20px
+      .nav__address-current
+         color: #333333
+         max-width: 164px 
+         width: 100%
+   .menu 
+      padding-right: 30px
+      .nav__local
+         img:first-of-type
+            display: none
+      .nav__local img:last-of-type
+         margin-left: auto
+   .nav__address-list li
+      font-size: 14px
+      margin-bottom: 10px !important
+   .nav__address-list
+      top: 85%
+   .tar .swiper2
+      .slide_1
+         order: 2
+         display: none
+      .slide_2
+         order: 2
+      .slide_3
+         order: 3
+      .slide_4
+         order: 1
+      .slide_5
+         order: 5
+      .slide_6
+         order: 6
+         display: none
+      .slide_7
+         order: 7
+   .tar .swiper2 .swiper-slide a h3 span
+      width: 60px
+      height: 60px
+      font-size: 20px
+   .tar .swiper2 .swiper-slide.hit a h3
+      align-items: flex-start
+      position: relative
+      span
+         position: absolute
+         right: 0
+         top: 0
+         left: initial
+   .why__row
+      justify-content: space-between
+   .why__block
+      width: 48.5%
+   .why__block small
+      line-height: 19px
+   .sales 
+      .ser__per
+         padding-bottom: 20px
+   .page 
+      .ser__text, .ser__item ol
+         display: block
+      .set__row_2 .set__block h3
+         margin-left: 65px
+         width: 100%
+         max-width: 250px
+         div 
+            display: none
+      .set__row_2 .set__block
+         padding-top: 20px
+      .set__row_2 .set__block .svg
+         top: 26px
 @media screen and (max-width: 390px)
    .ser-items__item
       width: 48.4%
@@ -1681,4 +1798,9 @@
          margin-right: 0
    .order__bottom .nav__local, .order__flex a, .order__socials a
       font-size: 12px
-      
+   .tabs__btn, .radio-card
+      width: 47.3%
+   .ser__row div
+      width: 48%
+   .why__block
+      width: 48.3%

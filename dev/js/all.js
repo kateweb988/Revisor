@@ -322,7 +322,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     breakpoints: {
       320: {
-        spaceBetween: 0,
+        spaceBetween: 10,
+        initialSlide: 0, // старт со второго слайда
         slidesPerView: 1
       },
       767: {
