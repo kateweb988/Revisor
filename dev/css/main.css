@@ -3889,6 +3889,17 @@ body.lock {
   display: block;
 }
 
+.menu .nav__area a:first-child rect {
+  fill: #D91919;
+}
+
+.footer .nav__socials a:last-child .svg {
+  border-radius: 5px;
+}
+.footer .nav__socials a img {
+  display: none;
+}
+
 @media screen and (max-width: 1600px) {
   .popup-call__box {
     width: 95% !important;
@@ -6305,6 +6316,18 @@ body.lock {
   }
   .page .set__row_2 .set__block .svg {
     top: 26px;
+  }
+  .list li {
+    align-items: center;
+  }
+  .list li:before {
+    top: -0.5px;
+  }
+  .footer .nav__socials a:last-child .svg {
+    display: none;
+  }
+  .footer .nav__socials a img {
+    display: block;
   }
 }
 @media screen and (max-width: 390px) {
