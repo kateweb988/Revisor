@@ -627,7 +627,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
 .tar 
    padding: 75px 0 
    .swiper2 
-      height: 905px
+      height: 935px
       .swiper-slide 
          height: 100%
          display: flex
@@ -714,6 +714,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
                   font-family: "Roboto", sans-serif
             ul 
                padding-left: 0px
+               margin-bottom: 30px
                li 
                   margin-bottom: 10px
                   color: rgba(51, 51, 51, 1)
@@ -721,8 +722,15 @@ input:-moz-placeholder, textarea:-moz-placeholder
                   font-weight: 500
                   line-height: 21px
                   display: flex
-                  align-items: center
+                  align-items: flex-start
                   transition: 0.5s
+                  img 
+                     margin-right: 8px
+                     position: relative
+                     top: 1px
+                     width: 20px
+                     flex: 1 0 auto 
+                     max-width: 20px
                   &:last-child
                      margin-bottom: 0
                   &:before 
@@ -736,6 +744,8 @@ input:-moz-placeholder, textarea:-moz-placeholder
                      height: 4px 
                      background: rgba(51, 51, 51, 1)
                      border-radius: 50%
+                     position: relative
+                     top: 8px
             &:hover
                background: $red
                .tooltip__icon  
@@ -890,7 +900,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
       margin-bottom: 42px
    &__item 
       position: relative
-      width: 24%
+      width: 32.6%
       height: 64px
       input 
          width: 100%
@@ -953,7 +963,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
    cursor: pointer
    padding: 20px
    width: 285px
-   height: 139px
+   height: 191px
    border-radius: 20px
    background: rgba(255, 255, 255, 1)
    position: relative
@@ -975,11 +985,11 @@ input:-moz-placeholder, textarea:-moz-placeholder
    .title 
       transition: 0.5s 
       color: rgba(51, 51, 51, 1)
-      font-size: 22px
+      font-size: 20px
       font-weight: 400
-      line-height: 100%
+      line-height: 110%
       width: 100%
-      max-width: 240px
+      max-width: 201px
    .tooltip 
       position: absolute
       top: 20px
@@ -2767,7 +2777,7 @@ body.lock
       &:hover 
          color: white 
          background: $black
-.slide_1, .slide_2, .slide_3, .slide_4, .slide_6
+.slide_1, .slide_2, .slide_3, .slide_4, .slide_6, .slide_5
    li:before 
       display: none !important
 .tar .swiper2 .swiper-slide a ul li
@@ -2804,3 +2814,20 @@ body.lock
                border-radius: 5px
          img 
             display: none
+.nav__area 
+   .nav__soc
+      &:first-child
+         margin-right: -5px
+         .svg 
+            width: 29px
+            height: 29px
+            path 
+               fill: #D91919
+         &:hover 
+            .svg 
+               path 
+                  fill: $black
+.calc__flex
+   .calc__item
+      &:last-child
+         display: none

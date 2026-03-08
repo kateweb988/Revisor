@@ -1270,7 +1270,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   padding: 75px 0;
 }
 .tar .swiper2 {
-  height: 905px;
+  height: 935px;
 }
 .tar .swiper2 .swiper-slide {
   height: 100%;
@@ -1374,6 +1374,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 .tar .swiper2 .swiper-slide a ul {
   padding-left: 0px;
+  margin-bottom: 30px;
 }
 .tar .swiper2 .swiper-slide a ul li {
   margin-bottom: 10px;
@@ -1382,8 +1383,16 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   font-weight: 500;
   line-height: 21px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   transition: 0.5s;
+}
+.tar .swiper2 .swiper-slide a ul li img {
+  margin-right: 8px;
+  position: relative;
+  top: 1px;
+  width: 20px;
+  flex: 1 0 auto;
+  max-width: 20px;
 }
 .tar .swiper2 .swiper-slide a ul li:last-child {
   margin-bottom: 0;
@@ -1399,6 +1408,8 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   height: 4px;
   background: rgb(51, 51, 51);
   border-radius: 50%;
+  position: relative;
+  top: 8px;
 }
 .tar .swiper2 .swiper-slide a:hover {
   background: #D91919;
@@ -1592,7 +1603,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 .calc__item {
   position: relative;
-  width: 24%;
+  width: 32.6%;
   height: 64px;
 }
 .calc__item input {
@@ -1666,7 +1677,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   cursor: pointer;
   padding: 20px;
   width: 285px;
-  height: 139px;
+  height: 191px;
   border-radius: 20px;
   background: rgb(255, 255, 255);
   position: relative;
@@ -1690,11 +1701,11 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 .radio-card .title {
   transition: 0.5s;
   color: rgb(51, 51, 51);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 100%;
+  line-height: 110%;
   width: 100%;
-  max-width: 240px;
+  max-width: 201px;
 }
 .radio-card .tooltip {
   position: absolute;
@@ -3857,7 +3868,7 @@ body.lock {
   background: #333333;
 }
 
-.slide_1 li:before, .slide_2 li:before, .slide_3 li:before, .slide_4 li:before, .slide_6 li:before {
+.slide_1 li:before, .slide_2 li:before, .slide_3 li:before, .slide_4 li:before, .slide_6 li:before, .slide_5 li:before {
   display: none !important;
 }
 
@@ -3893,6 +3904,24 @@ body.lock {
   border-radius: 5px;
 }
 .footer .nav__socials a img {
+  display: none;
+}
+
+.nav__area .nav__soc:first-child {
+  margin-right: -5px;
+}
+.nav__area .nav__soc:first-child .svg {
+  width: 29px;
+  height: 29px;
+}
+.nav__area .nav__soc:first-child .svg path {
+  fill: #D91919;
+}
+.nav__area .nav__soc:first-child:hover .svg path {
+  fill: #333333;
+}
+
+.calc__flex .calc__item:last-child {
   display: none;
 }
 
@@ -4339,6 +4368,12 @@ body.lock {
     height: 66px;
     width: auto;
   }
+  .tar .swiper2 {
+    height: 962px;
+  }
+  .calc__item {
+    width: 32.4%;
+  }
 }
 @media screen and (max-width: 1350px) {
   .objects__item .btn_2 {
@@ -4490,7 +4525,7 @@ body.lock {
     width: 360px !important;
   }
   .tar .swiper2 {
-    height: 938px;
+    height: 982px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -6324,6 +6359,18 @@ body.lock {
   }
   .footer .nav__socials a img {
     display: block;
+  }
+  .radio-card .title {
+    max-width: 133px;
+  }
+  .radio-card {
+    height: 126px;
+  }
+  .tar .swiper2 .swiper-slide a ul li img {
+    width: 14px;
+    max-width: 14px;
+    position: relative;
+    top: 3px;
   }
 }
 @media screen and (max-width: 390px) {
