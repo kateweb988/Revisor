@@ -1270,7 +1270,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   padding: 75px 0;
 }
 .tar .swiper2 {
-  height: 935px;
+  height: 962px;
 }
 .tar .swiper2 .swiper-slide {
   height: 100%;
@@ -3925,6 +3925,10 @@ body.lock {
   display: none;
 }
 
+.tar .top .arrows {
+  display: none;
+}
+
 @media screen and (max-width: 1600px) {
   .popup-call__box {
     width: 95% !important;
@@ -4369,7 +4373,7 @@ body.lock {
     width: auto;
   }
   .tar .swiper2 {
-    height: 962px;
+    height: 1006px;
   }
   .calc__item {
     width: 32.4%;
@@ -6283,7 +6287,6 @@ body.lock {
   }
   .tar .swiper2 .slide_1 {
     order: 2;
-    display: none;
   }
   .tar .swiper2 .slide_2 {
     order: 2;
@@ -6299,10 +6302,12 @@ body.lock {
   }
   .tar .swiper2 .slide_6 {
     order: 6;
-    display: none;
   }
   .tar .swiper2 .slide_7 {
     order: 7;
+  }
+  .tar .swiper2 .swiper-slide {
+    opacity: 1;
   }
   .tar .swiper2 .swiper-slide a h3 span {
     width: 60px;
