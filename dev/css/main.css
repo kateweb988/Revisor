@@ -3868,7 +3868,7 @@ body.lock {
   background: #333333;
 }
 
-.slide_1 li:before, .slide_2 li:before, .slide_3 li:before, .slide_4 li:before, .slide_6 li:before, .slide_5 li:before {
+.slide_1 li:before, .slide_2 li:before, .slide_3 li:before, .slide_4 li:before, .slide_6 li:before {
   display: none !important;
 }
 
