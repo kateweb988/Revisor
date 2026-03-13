@@ -627,7 +627,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
 .tar 
    padding: 75px 0 
    .swiper2 
-      height: 962px
+      height: 943px
       .swiper-slide 
          height: 100%
          display: flex
@@ -727,7 +727,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
                   img 
                      margin-right: 8px
                      position: relative
-                     top: 1px
+                     top: 2px
                      width: 20px
                      flex: 1 0 auto 
                      max-width: 20px
@@ -799,7 +799,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
    &__text 
       margin-bottom: 30px
       p 
-         font-size: 22px
+         font-size: 21px
          font-weight: 500
          transition: 0.5s
          line-height: 126.02%
@@ -892,7 +892,22 @@ input:-moz-placeholder, textarea:-moz-placeholder
          &::first-letter
             color: $red
    .calc__title
-      margin-bottom: 40px
+      margin-bottom: 15px
+   &__new 
+      font-weight: 400
+      font-size: 18px
+      line-height: 21px
+      color: rgba(51, 51, 51, 0.5)
+      margin-bottom: 25px
+   &__sper 
+      margin-bottom: 25px
+      gap: 20px
+      p 
+         font-weight: 400
+         font-size: 18px
+         line-height: 21px
+         span
+            color: #D91919
    .tabs__nav
       margin-bottom: 27px
    &__flex 
@@ -962,7 +977,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
 .radio-card  
    cursor: pointer
    padding: 20px
-   width: 285px
+   width: 284px
    height: 191px
    border-radius: 20px
    background: rgba(255, 255, 255, 1)
@@ -1429,14 +1444,14 @@ input:-moz-placeholder, textarea:-moz-placeholder
                path 
                   fill: black
                   fill-opacity: 1
-         &:last-child
-            rect
-               fill: $red
-            path 
-               fill: white !important
-            &:hover 
-               rect 
-                  fill: black
+         // &:last-child
+         //    rect
+         //       fill: $red
+         //    path 
+         //       fill: white !important
+         //    &:hover 
+         //       rect 
+         //          fill: black
 .what 
    padding: 75px 0 
    &__box 
@@ -1879,9 +1894,7 @@ input:-moz-placeholder, textarea:-moz-placeholder
             &:last-child
                .svg 
                   path 
-                     fill: rgba(22, 22, 22, 1)
-                  rect 
-                     fill: white
+                     fill: #161616
             &:hover 
                .svg 
                   path 
@@ -2777,13 +2790,11 @@ body.lock
       &:hover 
          color: white 
          background: $black
-.slide_1, .slide_2, .slide_3, .slide_4, .slide_6
+.slide_1, .slide_2, .slide_3, .slide_4, .slide_5
    li:before 
       display: none !important
 .tar .swiper2 .swiper-slide a ul li
    font-size: 17px
-.rev__el:first-child
-   display: none
 .set__row_2 .set__block h3
    display: flex
    div 
@@ -2833,3 +2844,23 @@ body.lock
          display: none
 .tar .top .arrows
    display: none
+.nav__socials a:last-child
+   .svg 
+      fill-opacity: 1 !important
+.radio-card:last-child .title
+   max-width: 180px
+.tabs__pane
+   &:nth-child(2)
+      .calc__row_1
+         .radio-card
+            pointer-events: none
+.set__row_2 .set__block h3 div
+   display: none
+.set__row_2 .set__block .svg 
+   position: absolute
+   right: initial
+   top: 30px
+   left: 30px
+   margin-top: 0
+.set__row_2 .set__block h3
+   margin-left: 91px

@@ -1270,7 +1270,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   padding: 75px 0;
 }
 .tar .swiper2 {
-  height: 962px;
+  height: 943px;
 }
 .tar .swiper2 .swiper-slide {
   height: 100%;
@@ -1389,7 +1389,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 .tar .swiper2 .swiper-slide a ul li img {
   margin-right: 8px;
   position: relative;
-  top: 1px;
+  top: 2px;
   width: 20px;
   flex: 1 0 auto;
   max-width: 20px;
@@ -1478,7 +1478,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   margin-bottom: 30px;
 }
 .tar__text p {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 500;
   transition: 0.5s;
   line-height: 126.02%;
@@ -1592,7 +1592,26 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   color: #D91919;
 }
 .calc .calc__title {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+}
+.calc__new {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.5);
+  margin-bottom: 25px;
+}
+.calc__sper {
+  margin-bottom: 25px;
+  gap: 20px;
+}
+.calc__sper p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.calc__sper p span {
+  color: #D91919;
 }
 .calc .tabs__nav {
   margin-bottom: 27px;
@@ -1676,7 +1695,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 .radio-card {
   cursor: pointer;
   padding: 20px;
-  width: 285px;
+  width: 284px;
   height: 191px;
   border-radius: 20px;
   background: rgb(255, 255, 255);
@@ -2240,15 +2259,6 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   fill: black;
   fill-opacity: 1;
 }
-.order .nav__socials a:last-child rect {
-  fill: #D91919;
-}
-.order .nav__socials a:last-child path {
-  fill: white !important;
-}
-.order .nav__socials a:last-child:hover rect {
-  fill: black;
-}
 
 .what {
   padding: 75px 0;
@@ -2780,10 +2790,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
   fill-opacity: 1;
 }
 .footer__top .nav__socials a:last-child .svg path {
-  fill: rgb(22, 22, 22);
-}
-.footer__top .nav__socials a:last-child .svg rect {
-  fill: white;
+  fill: #161616;
 }
 .footer__top .nav__socials a:hover .svg path {
   fill: #D91919;
@@ -3868,16 +3875,12 @@ body.lock {
   background: #333333;
 }
 
-.slide_1 li:before, .slide_2 li:before, .slide_3 li:before, .slide_4 li:before, .slide_6 li:before {
+.slide_1 li:before, .slide_2 li:before, .slide_3 li:before, .slide_4 li:before, .slide_5 li:before {
   display: none !important;
 }
 
 .tar .swiper2 .swiper-slide a ul li {
   font-size: 17px;
-}
-
-.rev__el:first-child {
-  display: none;
 }
 
 .set__row_2 .set__block h3 {
@@ -3927,6 +3930,34 @@ body.lock {
 
 .tar .top .arrows {
   display: none;
+}
+
+.nav__socials a:last-child .svg {
+  fill-opacity: 1 !important;
+}
+
+.radio-card:last-child .title {
+  max-width: 180px;
+}
+
+.tabs__pane:nth-child(2) .calc__row_1 .radio-card {
+  pointer-events: none;
+}
+
+.set__row_2 .set__block h3 div {
+  display: none;
+}
+
+.set__row_2 .set__block .svg {
+  position: absolute;
+  right: initial;
+  top: 30px;
+  left: 30px;
+  margin-top: 0;
+}
+
+.set__row_2 .set__block h3 {
+  margin-left: 91px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -4052,7 +4083,7 @@ body.lock {
     font-size: 16px;
   }
   .tar__text p {
-    font-size: 19px;
+    font-size: 16px;
   }
   .tar__info {
     padding-top: 31px;
@@ -4373,10 +4404,13 @@ body.lock {
     width: auto;
   }
   .tar .swiper2 {
-    height: 1006px;
+    height: 972px;
   }
   .calc__item {
     width: 32.4%;
+  }
+  .set__row_2 .set__block .svg {
+    top: 25px;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -5109,6 +5143,9 @@ body.lock {
   .list li {
     width: 100%;
   }
+  .menu .nav__area a:first-child .svg rect {
+    fill: white;
+  }
 }
 @media (max-width: 991px) {
   .note__name {
@@ -5486,6 +5523,9 @@ body.lock {
   }
   .video-page__item {
     width: 100%;
+  }
+  .set__row_2 .set__block h3 {
+    min-height: 47px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -5884,6 +5924,18 @@ body.lock {
     width: 100%;
     margin-top: 25px;
     margin-bottom: 20px;
+  }
+  .calc__new {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .calc__sper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .calc__sper p {
+    font-size: 13px;
+    line-height: 17px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -6376,6 +6428,12 @@ body.lock {
     max-width: 14px;
     position: relative;
     top: 3px;
+  }
+  .page .set__row_2 .set__block .svg {
+    top: 29px;
+  }
+  .set__row_2 .set__block h3 {
+    min-height: initial;
   }
 }
 @media screen and (max-width: 390px) {

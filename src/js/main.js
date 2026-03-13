@@ -37,21 +37,83 @@ document.addEventListener("DOMContentLoaded", () => {
       const elLinkTarget = this._elButtons[index];
       elLinkTarget ? this.show(elLinkTarget) : null;
     };
-    _events() {
-      this._elTabs.addEventListener('click', (e) => {
-        const target = e.target.closest('.tabs__btn');
-        if (target) {
-          e.preventDefault();
-          this.show(target);
-        }
-      });
+   _events() {
+  this._elTabs.addEventListener('click', (e) => {
+    const target = e.target.closest('.tabs__btn');
+    if (!target) return;
+
+    // если кнопка с классом go_to — не переключаем таб
+    if (target.classList.contains('go_to')) {
+      return;
     }
+
+    e.preventDefault();
+    this.show(target);
+  });
+}
   }
 
   // инициализация .tabs как табов
   new ItcTabs('.tabs');
 });
+document.addEventListener("DOMContentLoaded", function () {
 
+  const firstTab = document.querySelector(".tabs__pane_show");
+  if (!firstTab) return;
+
+  const cards = firstTab.querySelectorAll(".radio-card");
+
+  const group1Titles = [
+    "Фотофиксация замечаний",
+    "Определение прочности стяжки",
+    "Сверка общей площади квартиры",
+    "Тепловизионный осмотр",
+    "Дополнительная проверка электрики"
+  ];
+
+  const group2Titles = [
+    "Пакет документов",
+    "Специалист НОСТРОЙ",
+    "Тест АЭРОДВЕРЬЮ"
+  ];
+
+  const group1 = [];
+  const group2 = [];
+
+  cards.forEach(card => {
+    const title = card.querySelector(".title")?.innerText || "";
+    const input = card.querySelector("input");
+
+    if (!input) return;
+
+    if (group1Titles.some(t => title.includes(t))) {
+      group1.push(input);
+    }
+
+    if (group2Titles.some(t => title.includes(t))) {
+      group2.push(input);
+    }
+  });
+
+  function activateGroup(group) {
+    group.forEach(input => {
+      input.checked = true;
+    });
+  }
+
+  group1.forEach(input => {
+    input.addEventListener("change", () => {
+      if (input.checked) activateGroup(group1);
+    });
+  });
+
+  group2.forEach(input => {
+    input.addEventListener("change", () => {
+      if (input.checked) activateGroup(group2);
+    });
+  });
+
+});
 window.addEventListener("DOMContentLoaded", function () {
   [].forEach.call(document.querySelectorAll('.tel'), function (input) {
     var keyCode;
@@ -868,39 +930,73 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-// svg
-$(function () {
-  jQuery('img.svg').each(function () {
-    var $img = jQuery(this);
-    var imgID = $img.attr('id');
-    var imgClass = $img.attr('class');
-    var imgURL = $img.attr('src');
-
-    jQuery.get(imgURL, function (data) {
-      // Get the SVG tag, ignore the rest
-      var $svg = jQuery(data).find('svg');
-
-      // Add replaced image's ID to the new SVG
-      if (typeof imgID !== 'undefined') {
-        $svg = $svg.attr('id', imgID);
+// Скролл по якорям
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.go_to').forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      const targetSelector = link.getAttribute('href');
+      const targetElement = document.querySelector(targetSelector);
+      if (targetElement) {
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - 100;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
       }
-      // Add replaced image's classes to the new SVG
-      if (typeof imgClass !== 'undefined') {
-        $svg = $svg.attr('class', imgClass + ' replaced-svg');
-      }
+    });
+  });
+});
 
-      // Remove any invalid XML tags as per http://validator.w3.org
-      $svg = $svg.removeAttr('xmlns:a');
+document.addEventListener("DOMContentLoaded", function () {
 
-      // Check if the viewport is set, else we gonna set it if we can.
-      if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-        $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-      }
+  const images = document.querySelectorAll('img.svg');
 
-      // Replace image with new SVG
-      $img.replaceWith($svg);
+  images.forEach(img => {
 
-    }, 'xml');
+    const imgID = img.id;
+    const imgClass = img.className;
+    const imgURL = img.src;
+
+    fetch(imgURL)
+      .then(response => response.text())
+      .then(data => {
+
+        const parser = new DOMParser();
+        const svgDoc = parser.parseFromString(data, "image/svg+xml");
+        let svg = svgDoc.querySelector("svg");
+
+        if (!svg) return;
+
+        // добавить id
+        if (imgID) {
+          svg.setAttribute("id", imgID);
+        }
+
+        // добавить классы
+        if (imgClass) {
+          svg.setAttribute("class", imgClass + " replaced-svg");
+        }
+
+        // удалить лишний атрибут
+        svg.removeAttribute("xmlns:a");
+
+        // если нет viewBox
+        if (!svg.getAttribute("viewBox") &&
+            svg.getAttribute("height") &&
+            svg.getAttribute("width")) {
+
+          svg.setAttribute(
+            "viewBox",
+            `0 0 ${svg.getAttribute("height")} ${svg.getAttribute("width")}`
+          );
+        }
+
+        // заменить img на svg
+        img.replaceWith(svg);
+
+      });
 
   });
+
 });
